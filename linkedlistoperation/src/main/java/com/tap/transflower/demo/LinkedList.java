@@ -37,10 +37,9 @@ public class LinkedList {
         
         while(current.next!=null){
              Node previous = current;
-             System.out.println(previous.data);
+             current=current.next;
             if(current.data==data){
                 previous.next=current.next;
-                System.out.println(previous.data);
             }
         }
     }
