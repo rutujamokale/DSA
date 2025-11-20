@@ -15,6 +15,7 @@ public class App
 
         list.delete(45);
         list.display();
+        list.search(25);
     }
 
 }
