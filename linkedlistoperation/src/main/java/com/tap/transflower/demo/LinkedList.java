@@ -28,30 +28,36 @@ public class LinkedList {
     public void remove(int data) {
        if(head.data==data){
         head=head.next;
+        return;
        }
 
-       else{
-        Node current=toDelete;
-            if(search(data)){
-                previousNode.next=current.next;
-                current=null;
-            }
-       }
+      Node current=head;
+      Node previous =null;
+
+      while(current !=null){
+        if(current.data==data){
+            previous.next=current.next;
+            System.out.println("delete node:");
+            return;
+        }
+        previous = current;
+            current = current.next;
+
+      }
+      System.out.println(" data not found ");
+
+
     }
 
     public boolean search(int data) {
-       boolean status=false;
        Node current=head;
-       while(current.next!=null){
-        previousNode=current;
-        current=current.next;
+       while(current!=null){
         if(current.data==data){
-            toDelete=current;
-            status=true;
-            return status;
+            return true;
         }
+        current=current.next;
        }
-       return status;
+       return false;
     }
 
     public void display() {

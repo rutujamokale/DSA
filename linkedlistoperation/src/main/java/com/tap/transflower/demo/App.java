@@ -13,9 +13,15 @@ public class App
 
         list.display();
 
-        list.remove(45);
-        list.display();
-        list.search(25);
-    }
+        //  list.remove(45);
+        //  list.display();
+   System.out.println("Search 25: " + list.search(25));
 
+    list.display();
+       
+       
+    //     list.display();
+    // }
+
+}
 }
