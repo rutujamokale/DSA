@@ -1,20 +1,26 @@
 package com.tap.transflower.demo;
 
 public class Node {
-
-    Node next;
+    
     int data;
+    Node next;
+  
 
 
     public Node(){
-        next=null;
+     
         data=0;
+         next=null;
 
     }
 
     public Node( int data){
-            next=null;
             this. data=data;
+            next=null;
+           
     }
-    
+    public void display(){
+        System.out.println(this.data);
+    }
+
 }

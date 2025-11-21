@@ -5,7 +5,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        LinkedList list=new LinkedList(0);
+        LinkedList list=new LinkedList();
         list.insert(10);
         list.insert(20);
         list.insert(25);
@@ -13,7 +13,7 @@ public class App
 
         list.display();
 
-        list.delete(45);
+        list.remove(45);
         list.display();
         list.search(25);
     }

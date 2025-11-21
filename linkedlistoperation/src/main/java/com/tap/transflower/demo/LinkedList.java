@@ -1,72 +1,66 @@
 package com.tap.transflower.demo;
 
 public class LinkedList {
-    private  Node startNode;
 
-    private int data;
+    Node head;
+    Node previousNode;
+    Node toDelete;
 
+    public LinkedList() {
+        head = null;
 
-    public LinkedList(){
-        startNode.data=0;
-        startNode.next=null;
     }
-
-    public LinkedList(int data){
-        startNode =new Node(data);
-    }
-
-    public void insert(int data){
-        Node newNode=new Node(data);
-
-        if(startNode==null){
-            startNode=newNode;
+    public void insert(int data) {
+        Node theNode = new Node(data);
+        if (head == null) {
+            head = theNode;
         }
+        else{
+        Node current = head;
 
-        Node current=startNode;
 
-        while(current.next !=null){
-            current=current.next;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = theNode;
     }
-    current.next=newNode;
-
     }
+    public void remove(int data) {
+       if(head.data==data){
+        head=head.next;
+       }
 
-
-    public void delete(int data){
-        Node current = startNode;
-        
-        while(current.next!=null){
-             Node previous = current;
-             current=current.next;
-            if(current.data==data){
-                previous.next=current.next;
+       else{
+        Node current=toDelete;
+            if(search(data)){
+                previousNode.next=current.next;
+                current=null;
             }
-        }
-    }
-    public void search(int data){
-        Node current=startNode;
-        int count=1;
-        while(current.next!=null){
-            current=current.next;
-            count++;
-            if(current.data==data){
-                System.out.println("Your data is : "+data+" at position : "+count);
-            }
-        }
+       }
     }
 
-    
+    public boolean search(int data) {
+       boolean status=false;
+       Node current=head;
+       while(current.next!=null){
+        previousNode=current;
+        current=current.next;
+        if(current.data==data){
+            toDelete=current;
+            status=true;
+            return status;
+        }
+       }
+       return status;
+    }
 
-    
-
-
-    public void display(){
+    public void display() {
         System.out.println("*****************************************");
-        Node current=startNode;
+        Node current = head;
 
-        while(current !=null){
+        while (current != null) {
             System.out.println(current.data);
-            current=current.next;
+            current = current.next;
         }
         System.out.println("********************");
     }
