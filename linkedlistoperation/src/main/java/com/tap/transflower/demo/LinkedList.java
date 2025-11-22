@@ -37,27 +37,28 @@ public class LinkedList {
       while(current !=null){
         if(current.data==data){
             previous.next=current.next;
-            System.out.println("delete node:");
+            System.out.println("delete node:" +current.data );
             return;
         }
         previous = current;
             current = current.next;
 
       }
-      System.out.println(" data not found ");
+      System.out.println(" data not found " +data);
 
 
     }
 
-    public boolean search(int data) {
+    public void search(int data) {
        Node current=head;
        while(current!=null){
-        if(current.data==data){
-            return true;
+        if(current.data==data){ 
+            System.out.println("search node: " + current.data);
+            return ;
         }
         current=current.next;
        }
-       return false;
+      System.out.println("node not search:" +data);
     }
 
     public void display() {

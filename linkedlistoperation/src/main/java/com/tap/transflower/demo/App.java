@@ -1,27 +1,31 @@
 package com.tap.transflower.demo;
 
+import java.util.Scanner;
+
 
 public class App 
 {
     public static void main( String[] args )
     {
         LinkedList list=new LinkedList();
-        list.insert(10);
-        list.insert(20);
-        list.insert(25);
-        list.insert(45);
 
-        list.display();
+        Scanner sc=new Scanner(System.in);
+        int choice;
+        do{
+        System.out.println("\n---MENU---");
+          System.out.println("1.insert" );
+          System.out.println("2.remove" );
+            System.out.println("3.search" );
+            System.out.println("4.display" );
+            System.out.println("5.exit" );
 
-        //  list.remove(45);
-        //  list.display();
-   System.out.println("Search 25: " + list.search(25));
 
-    list.display();
+        }
+
+        
+    
        
-       
-    //     list.display();
-    // }
+    
 
 }
 }
