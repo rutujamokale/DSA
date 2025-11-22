@@ -45,14 +45,34 @@ public class App
                     break;     
 
 
+
+
+                case 3:
+                    System.out.println("enter data to search");   
+                    int dataSearch=sc.nextInt();
+                    list.search(dataSearch);
+
+
+                case 4:
+                    list.display();
+                    break;
+                    
+                    
+                case 5:
+                    System.out.println("exiting");    
+                    break;
+                
+                    
+                default:
+                    System.out.println("invalid choice! please try again.");    
+
+                    
             }
 
 
-        }
+        }while(choice!=5);
 
-        
-    
-       
+              
     
 
 }
