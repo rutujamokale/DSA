@@ -1,0 +1,15 @@
+D:\DSA\ArrayApp\obj\Debug\net9.0\ArrayApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\DSA\ArrayApp\obj\Debug\net9.0\ArrayApp.AssemblyInfoInputs.cache
+D:\DSA\ArrayApp\obj\Debug\net9.0\ArrayApp.AssemblyInfo.cs
+D:\DSA\ArrayApp\obj\Debug\net9.0\ArrayApp.csproj.CoreCompileInputs.cache
+D:\DSA\ArrayApp\obj\Debug\net9.0\ArrayApp.sourcelink.json
+D:\DSA\ArrayApp\bin\Debug\net9.0\ArrayApp.exe
+D:\DSA\ArrayApp\bin\Debug\net9.0\ArrayApp.deps.json
+D:\DSA\ArrayApp\bin\Debug\net9.0\ArrayApp.runtimeconfig.json
+D:\DSA\ArrayApp\bin\Debug\net9.0\ArrayApp.dll
+D:\DSA\ArrayApp\bin\Debug\net9.0\ArrayApp.pdb
+D:\DSA\ArrayApp\obj\Debug\net9.0\ArrayApp.dll
+D:\DSA\ArrayApp\obj\Debug\net9.0\refint\ArrayApp.dll
+D:\DSA\ArrayApp\obj\Debug\net9.0\ArrayApp.pdb
+D:\DSA\ArrayApp\obj\Debug\net9.0\ArrayApp.genruntimeconfig.cache
+D:\DSA\ArrayApp\obj\Debug\net9.0\ref\ArrayApp.dll
