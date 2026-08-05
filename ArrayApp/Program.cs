@@ -132,6 +132,32 @@ public class Program{
             Console.WriteLine();
         }
 
+        //diagonal matrix
+
+        int[,]arr={
+            {2,0,0},
+            {0,5,0},
+            {0,6,7}
+        };
+
+        bool isDiagonal=true;
+
+        for(int i= 0;i<arr.GetLength(0);i++){
+            for(int j=0;j<arr.GetLength(1);j++){
+                if( i!=j && arr[i,j]!=0){
+                    isDiagonal=false;
+                }
+            }
+
+
+        }
+
+        if(isDiagonal){
+            Console.WriteLine("this is Diagonal");
+        }else{
+            Console.WriteLine("this is not diagonal");
+        }
+
 
 }
 }
